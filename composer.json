@@ -1,0 +1,16 @@
+{
+    "name": "jhoyax/laravel-contact-form",
+    "description": "Contact Form for Laravel",
+    "authors": [
+        {
+            "name": "Joy Christine Asis",
+            "email": "joylopenaasis@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.2"
+    }
+}
