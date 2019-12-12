@@ -8,9 +8,20 @@
         }
     ],
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.2",
         "laravel/framework": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jhoyax\\LaravelContactForm\\": "src/"
+        }
+    },"extra": {
+        "laravel": {
+            "providers": [
+                "Jhoyax\\LaravelContactForm\\Providers\\ContactFormServiceProvider"
+            ]
+        }
     }
 }

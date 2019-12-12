@@ -30,5 +30,18 @@ class ContactFormServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'contact_form');
         $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'contact_form');
+
+        $this->publishes([
+            __DIR__ . '/../../config/contact_form.php' => config_path('contact_form.php'),
+        ], 'config');
+        $this->publishes([
+            __DIR__ . '/../../database/migrations'=> database_path('migrations'),
+        ], 'migrations');
+        $this->publishes([
+            __DIR__ . '/../../resources/lang' => resource_path('lang/vendor/contact_form'),
+        ], 'lang');
+        $this->publishes([
+            __DIR__ . '/../../resources/views' => resource_path('views/vendor/contact_form'),
+        ], 'views');
     }
 }
