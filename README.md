@@ -1,6 +1,7 @@
 # Laravel Contact Form
 
-Simple contact form for your site.
+This package allows you to include contact form anywhere in views.
+You can also add/edit fields in the table by overwriting the migration file.
 
 ## Installation
 
