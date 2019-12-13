@@ -12,10 +12,10 @@ composer require jhoyax/laravel-contact-form
 Optional: Overwrite config, migrations, lang or views
 
 ```
-php artisan vendor:publish --tag=config
-php artisan vendor:publish --tag=migrations
-php artisan vendor:publish --tag=lang
-php artisan vendor:publish --tag=views
+php artisan vendor:publish --tag=contact_form_config
+php artisan vendor:publish --tag=contact_form_migrations
+php artisan vendor:publish --tag=contact_form_lang
+php artisan vendor:publish --tag=contact_form_views
 ```
 
 ## Configuration

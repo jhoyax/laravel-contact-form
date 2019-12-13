@@ -33,15 +33,15 @@ class ContactFormServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../../config/contact_form.php' => config_path('contact_form.php'),
-        ], 'config');
+        ], 'contact_form_config');
         $this->publishes([
             __DIR__ . '/../../database/migrations'=> database_path('migrations'),
-        ], 'migrations');
+        ], 'contact_form_migrations');
         $this->publishes([
             __DIR__ . '/../../resources/lang' => resource_path('lang/vendor/contact_form'),
-        ], 'lang');
+        ], 'contact_form_lang');
         $this->publishes([
             __DIR__ . '/../../resources/views' => resource_path('views/vendor/contact_form'),
-        ], 'views');
+        ], 'contact_form_views');
     }
 }
