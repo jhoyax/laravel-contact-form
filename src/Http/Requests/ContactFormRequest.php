@@ -23,10 +23,6 @@ class ContactFormRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'name' => ['required', 'min:3', 'max:500'],
-            'email_address' => ['required', 'email', 'min:3', 'max:500'],
-            'message' => ['required', 'min:3'],
-        ];
+        return config('contact_form.rules');
     }
 }
